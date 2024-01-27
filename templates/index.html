@@ -1,0 +1,17 @@
+{% extends 'core.html' %}
+
+
+<div>
+    {% block core_body %}
+    <div class="my-5 text-center">
+        <h1>
+            {{_("Welcome to django-iyzico project!")}}
+        </h1>
+        <div class="d-grid gap-2 my-5 col-lg-6 mx-auto">
+            <a class="btn btn-primary btn-lg" href="{% url 'payments:index' %}">
+                {{_("Payment Index Page")}}
+            </a>
+        </div>
+    </div>
+    {% endblock core_body %}
+</div>
